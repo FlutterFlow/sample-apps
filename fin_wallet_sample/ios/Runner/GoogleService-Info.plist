@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>180463640197-njukg0ftctm67shh0ta0riq9q1q54bep.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.180463640197-njukg0ftctm67shh0ta0riq9q1q54bep</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>180463640197-6jiucovljbi9vf5spsbltnuql81d8ok5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBqtso5rVxqdEYavYUpV5HH4zy2sAv9KbQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>180463640197</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flutterflow.finwallet</string>
+	<key>PROJECT_ID</key>
+	<string>finance-app-32589</string>
+	<key>STORAGE_BUCKET</key>
+	<string>finance-app-32589.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:180463640197:ios:213a9d1fd5cb3b3a90d3ec</string>
+</dict>
+</plist>

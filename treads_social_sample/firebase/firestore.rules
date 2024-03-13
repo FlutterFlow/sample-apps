@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /userPosts/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if resource.data.postUser == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if true;
+      allow write: if request.auth.uid == document;
+      allow delete: if false;
+    }
+
+    match /postComments/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if resource.data.user == /databases/$(database)/documents/users/$(request.auth.uid);
+      allow delete: if false;
+    }
+
+    match /userStories/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if resource.data.user == /databases/$(database)/documents/users/$(request.auth.uid);
+      allow delete: if false;
+    }
+
+    match /storyComments/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if resource.data.commentUser == /databases/$(database)/documents/users/$(request.auth.uid);
+      allow delete: if resource.data.commentUser == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /dogs/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /friends/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /chats/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if /databases/$(database)/documents/users/$(request.auth.uid) in resource.data.users;
+      allow delete: if resource.data.user_a == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    match /chat_messages/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if resource.data.user == /databases/$(database)/documents/users/$(request.auth.uid);
+      allow delete: if resource.data.user == /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "558943550851",
+    "project_id": "school-social-uni-demo-ttazup",
+    "storage_bucket": "school-social-uni-demo-ttazup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558943550851:android:1bf8ff80b54e87a5e6cab6",
+        "android_client_info": {
+          "package_name": "com.flutterflow.sniffsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558943550851-68096n2llr91prq9j4bsemo86vero5dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy8exZpRFoXvGVT_kVSZuqp5m_QSU7ZVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558943550851-68096n2llr91prq9j4bsemo86vero5dt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "558943550851-1dn39afkcfhjjmlg6vt3b3g7cn4hrvf1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.sniffsocial"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
